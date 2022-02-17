@@ -6,7 +6,7 @@ option(INSTALL_B_FILE "install b_file.txt" OFF)
 install(FILES a_file.txt
     DESTINATION share/${PROJECT_NAME})
 
-if(INSTALL_B_FILE)
+if(${INSTALL_B_FILE})
     install(FILES b_file.txt
         DESTINATION share/${PROJECT_NAME})
 endif()
