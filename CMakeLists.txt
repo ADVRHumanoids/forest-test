@@ -3,3 +3,6 @@ project(forest_test)
 
 install(FILES a_file.txt
     DESTINATION share/${PROJECT_NAME})
+
+install(FILES ${PROJECT_NAME}Config.cmake
+    DESTINATION lib/cmake/${PROJECT_NAME})
