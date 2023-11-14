@@ -13,3 +13,7 @@ endif()
 
 install(FILES ${PROJECT_NAME}Config.cmake
     DESTINATION lib/cmake/${PROJECT_NAME})
+
+file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/installdir "${MYINSTALLDIR}")
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/installdir
+    DESTINATION share/${PROJECT_NAME})
